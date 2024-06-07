@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portafolio de Luis</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#quien-soy">Quién Soy</a></li>
+                <li><a href="#estudios">Estudios</a></li>
+                <li><a href="#proyectos">Proyectos</a></li>
+                <li class="contact"><a href="#contactame">Contáctame</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="presentacion">
+            <h1>¡Hola! Soy Luis</h1>
+            <p>Bienvenido a mi portafolio de bases de datos y ciencias de datos, soy un estudiante de Ingenieria de ciencias de datos, con experiencia en uso de lenguajes 
+                de programacion y de gestion de datos comp son Pyton, R y SQL . </p>
+        </section>
+    </main>
+    <aside class="contact-info">
+        <h2>Contáctame</h2>
+        <p>Email: luis@example.com</p>
+        <p>Teléfono: +123 456 789</p>
+    </aside>
+    <footer>
+        <div class="tools-bar">
+            <div class="tool" onclick="showToolInfo('R')">
+                <div class="tool-front">
+                    <img src="images/r.svg" alt="R">
+                </div>
+                <div class="tool-back">
+                    <h3>R</h3>
+                    <p>Nivel: Intermedio</p>
+                    <p>Uso: Análisis de datos y estadísticas</p>
+                </div>
+            </div>
+            <div class="tool" onclick="showToolInfo('AWS')">
+                <div class="tool-front">
+                    <img src="images/aws.svg" alt="AWS">
+                </div>
+                <div class="tool-back">
+                    <h3>AWS</h3>
+                    <p>Nivel: Básico</p>
+                    <p>Uso: Servicios en la nube</p>
+                </div>
+            </div>
+            <div class="tool" onclick="showToolInfo('Linux')">
+                <div class="tool-front">
+                    <img src="images/linux.svg" alt="Linux">
+                </div>
+                <div class="tool-back">
+                    <h3>Linux</h3>
+                    <p>Nivel: Avanzado</p>
+                    <p>Uso: Administración de sistemas</p>
+                </div>
+            </div>
+            <div class="tool" onclick="showToolInfo('Python')">
+                <div class="tool-front">
+                    <img src="images/python.svg" alt="Python">
+                </div>
+                <div class="tool-back">
+                    <h3>Python</h3>
+                    <p>Nivel: Intermedio</p>
+                    <p>Uso: Programación general y análisis de datos</p>
+                </div>
+            </div>
+            <div class="tool" onclick="showToolInfo('SQL')">
+                <div class="tool-front">
+                    <img src="images/sql.svg" alt="SQL">
+                </div>
+                <div class="tool-back">
+                    <h3>SQL</h3>
+                    <p>Nivel: Básico</p>
+                    <p>Uso: Gestión y manipulación de bases de datos</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="scripts.js"></script>
+    <section id="projects">
+        <div class="project-content">
+            <div class="project-image">
+                <img src="images/project1.jpg" alt="Proyecto 1">
+                <div class="project-info">
+                    <div class="project-nav">
+                        <span class="project-dot active" onclick="showProject(1)"></span>
+                        <span class="project-dot" onclick="showProject(2)"></span>
+                        <span class="project-dot" onclick="showProject(3)"></span>
+                    </div>
+                    <div class="project-description">
+                        <h2>Proyecto #1: Análisis del S&P 500</h2>
+                        <p>Para este proyecto, utilizamos Power BI para crear visualizaciones claras y mantener la información organizada en un dashboard interactivo.</p>
+                        <h3>Descripción del Proyecto</h3>
+                        <ul>
+                            <li><strong>Conexión de Datos:</strong> Conectamos Power BI con la fuente de datos ya procesada en formato <code>.parquet</code>.</li>
+                            <li><strong>Creación de Visualizaciones:</strong> Desarrollamos tablas, gráficos y mapas para representar los datos de manera efectiva.</li>
+                            <li><strong>Selección de KPIs:</strong> Identificamos los KPIs clave para el análisis, creamos medidas y calculamos los indicadores relevantes.</li>
+                            <li><strong>Panel de Control:</strong> Diseñamos un panel de control que muestra la información más importante y relevante del S&P 500.</li>
+                            <li><strong>Diseño del Informe:</strong> Elaboramos un informe detallado y presentamos los resultados obtenidos a partir del análisis.</li>
+                            <li><strong>Exportación del Informe:</strong> El informe fue exportado en varios formatos como PDF, PNG y Excel para facilitar su distribución.</li>
+                        </ul>
+                        <h3>Link del Dashboard</h3>
+                        <p>El dashboard desarrollado en Power BI está disponible en el siguiente enlace:</p>
+                        <a href="https://drive.google.com/drive/folders/1I5p3TjFeIS7J7WCzntTcXejhtcwNYqMG?usp=share_link" target="_blank">Dashboard Power BI</a>
+                        <h3>KPIs Planteados</h3>
+                        <ul>
+                            <li>Retorno total</li>
+                            <li>Volatilidad</li>
+                            <li>Rentabilidad por industria</li>
+                            <li>Retorno por sector</li>
+                            <li>Crecimiento</li>
+                            <li>Mejores días para invertir</li>
+                            <li>Número de empresas con rentabilidad positiva</li>
+                            <li>Número de empresas con rentabilidad negativa</li>
+                        </ul>
+                        <h3>Acceso al Proyecto</h3>
+                        <p>El código fuente del proyecto se encuentra disponible en el siguiente repositorio de GitHub:</p>
+                        <a href="https://github.com/luisfer2405/PI_Hr_ANALYTICS" target="_blank">Repositorio GitHub</a>
+                        <h3>Tecnologías Utilizadas</h3>
+                        <ul>
+                            <li>Python</li>
+                            <li>Jupyter Notebook</li>
+                            <li>Pandas</li>
+                            <li>Power BI</li>
+                        </ul>
+                        <h3>Puntos a Mejorar para Implementación</h3>
+                        <ul>
+                            <li><strong>Automatización de la Actualización de Datos:</strong> Implementar un sistema automatizado para actualizar los datos en Power BI, permitiendo que el dashboard refleje información en tiempo real.</li>
+                            <li><strong>Mejorar la Interactividad del Dashboard:</strong> Incluir más opciones interactivas, como filtros y segmentaciones dinámicas, para que los usuarios puedan personalizar las visualizaciones según sus necesidades específicas.</li>
+                            <li><strong>Optimización del Rendimiento:</strong> Revisar y optimizar las consultas de datos y las medidas en Power BI para mejorar el rendimiento del dashboard, especialmente cuando se manejan grandes volúmenes de datos.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="projects">
+        <div class="project-content">
+            <div class="project-image">
+                <img src="images\proyecto2.png" alt="Imagen del proyecto">
+                <div class="project-info">
+                    <div class="project-description">
+                        <h2>Sistema de Recomendación de Películas</h2>
+                        <p>Este proyecto desarrolla un sistema de recomendación de películas utilizando datos de Hulu, Netflix, Amazon y Disney. El objetivo es proporcionar recomendaciones personalizadas basadas en el historial de visualización y las preferencias del usuario. El sistema emplea técnicas avanzadas de machine learning y análisis de datos para generar recomendaciones precisas y relevantes.</p>
+
+                        <h3>Características Principales:</h3>
+                        <ul>
+                            <li><strong>Video Explicativo:</strong> Un video breve que explica la gestión del sistema de recomendación, incluyendo la obtención de datos, procesamiento, y generación de recomendaciones.</li>
+                            <li><strong>Enlace al Repositorio de GitHub:</strong> Un pequeño botón con el icono de GitHub que dirige al repositorio del proyecto para acceder al código fuente y la documentación completa.</li>
+                        </ul>
+
+                        <div class="video-container">
+                            <iframe width="100%" height="315" src="images\proyecto2.mp4" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        </div>
+
+                        <h3>Tecnologías Utilizadas:</h3>
+                        <ul>
+                            <li>Python: Desarrollo del sistema de recomendación.</li>
+                            <li>Machine Learning: Algoritmos para el análisis de datos y generación de recomendaciones.</li>
+                            <li>Jupyter Notebook: Desarrollo y pruebas del código.</li>
+                            <li>GitHub: Control de versiones y almacenamiento del código fuente.</li>
+                        </ul>
+
+                        <a href="https://github.com/luisfer2405/PI_HDT_07_FEB_2023/blob/main/center-image.png" class="github-button">
+                            <img src="images\github.svg" alt="GitHub" width="20" height="20">
+                            Ver en GitHub
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+</html>
+
+
+
+
+
+        </div>
+        
+    </body>
+    </html>
